@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://www.embraplan.com.br/imagens/noticias/11b986fc-d5a6-49a8-ba84-7cbbe8b6f93e.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 25vh;
+    margin-top: 10vh;
+}
+.nav-carrinho{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 70px;
+    border-radius: 15px;
+}
+header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 45px;
+    margin-bottom: 2vh;
+}
+.volta-catalogo{
+    margin-top: 3vh;
+}
+.volta-catalogo a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.volta-catalogo a:hover{
+    background-color: rgb(7, 140, 7);
+    color: white;
+    cursor: pointer;
+}
+
+header{
+    margin-bottom: 3vh;
+}
+
+main ul{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul #lista-carrinho{
+    margin: 7px;
+}
+
+main p{
+    font-weight: bold;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+    sans-serif;
+    margin-top: 2vh;
+    
+}
+main button{
+border: none;
+outline: none;
+background-color: black;
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 5px;
+font-size: 18px;
+margin-top: 3vh;
+}
+main button:hover{
+    cursor: pointer;
+}
+
+
+
+

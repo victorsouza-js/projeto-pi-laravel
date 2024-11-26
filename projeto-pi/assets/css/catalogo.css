@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+header img {
+  width: 50px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  background-color: #4caf50;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+header a:hover {
+  background-color: #45a049;
+}
+
+header a {
+  position: relative;
+}
+
+#contador-carrinho {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.img-header img {
+  width: 80px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  max-width: 50%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  height: 180px;
+}
+
+.produto h2 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.produto button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+  width: 250px;
+}
+
+.produto button:hover {
+  background-color: #155f19;
+  transform: scale(1.05);
+}
+
+.preco {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}

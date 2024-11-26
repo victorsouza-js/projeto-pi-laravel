@@ -1,0 +1,526 @@
+body {
+    background-image: url(https://img.freepik.com/fotos-gratis/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar img {
+    width: 80px;
+}
+
+
+.nav-bar h2 {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1.5vh;
+    margin-left: 2vh;
+    color: black;
+}
+
+.container-fluid .navbar-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    transition: padding 0.2s;
+    border-radius: 10px;
+}
+
+.container-fluid .navbar-link:hover {
+    padding: 7px;
+    background-color: black;
+    color: white;
+}
+
+.container-fluid form input {
+    padding: 15px;
+    border: 3px solid blue;
+}
+
+.container-fluid ::placeholder {
+    font-size: 15px;
+    color: black;
+}
+
+.btn {
+    border: 2px solid black;
+    color: black;
+    border: none;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.div-nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 20vh;
+    margin-left: 20vh;
+}
+
+.div-nav img {
+    width: 700px;
+    transition: width 0.5s;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.div-nav img:hover {
+    width: 800px;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-top: 10vh;
+}
+
+.base h2 {
+    font-size: 130px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.base h3 {
+    color: white;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+
+.base a {
+    padding: 20px;
+    background-color: black;
+    border-radius: 5vh;
+    border: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.base a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sobre-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 181, 181);
+    height: 100vh;
+}
+
+.sobre-nav .linha {
+    border: 10px solid white;
+    width: 200px;
+    border-radius: 5vh;
+}
+
+.sobre-nav h1 {
+    color: black;
+    font-weight: bold;
+    margin-top: 10vh;
+}
+
+.sobre-nav img {
+    width: 500px;
+}
+
+.sobre-nav p {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.sobre-nav a {
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.sobre-nav a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.newsletter {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #2980b9;
+}
+
+.newsletter button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.newsletter button:active {
+    transform: scale(0.95);
+}
+
+
+.ofertas {
+    background-color: #0a0a0a4f;
+    padding: 50px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.ofertas h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.ofertas .linha {
+    width: 80px;
+    height: 10px;
+    background-color: #3498db;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.offer-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.offer-item img {
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.offer-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.offer-item .btn {
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.offer-item .btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.offer-item .btn:active {
+    transform: scale(0.95);
+}
+
+
+
+.outros-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+}
+
+.outros-servicos h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.outros-servicos .linha {
+    border: 10px solid black;
+    width: 200px;
+    border-radius: 5vh;
+}
+
+.box-img {
+    display: flex;
+    gap: 30vh;
+}
+
+.box-img img {
+    border-radius: 10px;
+    width: 250px;
+    object-fit: cover;
+    margin: 30px;
+}
+
+.carousel-item .d-block{
+    height: 670px;
+}
+
+
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+}
+
+.card {
+    width: 700px;
+    height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: width 0.5s;
+}
+.card:hover{
+    width: 800px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.card .overlay h2 {
+    font-weight: 300;
+}
+
+
+.card .overlay h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#beneficios {
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+}
+
+#beneficios img{
+    border-radius: 10px;
+}
+
+.faq {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.faq h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.faq .linha {
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto 30px auto;
+    border-radius: 2px;
+}
+
+.faq details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq details[open] {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq details summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq details summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq details[open] summary::after {
+    content: "-";
+    transform: translateY(-50%) rotate(180deg);
+    color: #e74c3c;
+}
+
+.faq details p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+
+footer div a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p i {
+    margin: 0 10px;
+}

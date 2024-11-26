@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho</title>
+    <link rel="stylesheet" href="../assets/css/carrinho.css">
+    <script>
+        function exibirCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const listaCarrinho = document.getElementById("lista-carrinho");
+            let total = 0;
+
+            listaCarrinho.innerHTML = "";
+
+            carrinho.forEach(produto => {
+                const item = document.createElement("li");
+                item.classList.add("item-carrinho");
+
+                item.innerHTML = `
+                    <span>${produto.nome}</span>
+                    <span>R$ ${produto.preco.toFixed(2)}</span>
+                `;
+
+                listaCarrinho.appendChild(item);
+                total += produto.preco;
+            });
+
+            document.getElementById("total").innerText = `Total: R$ ${total.toFixed(2)}`;
+        }
+
+        function limparCarrinho() {
+            localStorage.removeItem("carrinho");
+            exibirCarrinho();
+        }
+
+        window.onload = exibirCarrinho;
+    </script>
+</head>
+
+<body>
+    <div class="nav-carrinho">
+        <header>
+            <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/5087/5087784.png">
+            <div class="volta-catalogo">
+                <a href="catalogo.html">Voltar ao Catálogo</a> 
+            </div>
+        </header>
+    
+        <main>
+            <ul id="lista-carrinho"></ul>
+            <p id="total"></p>
+            <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </main>
+    </div>
+    
+    <script>
+        function finalizarCompra() {
+            window.location.href = "finalizar-compra.html";
+        }
+    </script>
+</body>
+</html>
