@@ -17,6 +17,18 @@ return new class extends Migration
             $table -> string('preco');
             $table -> string('qtd_estoque');
         });
+
+        Schema::create('venda', function (Blueprint $table) {
+            $table->id();
+            $table -> string('valor_total');
+            $table -> string('data');
+            $table -> string('cliente_id');
+            $table -> string('vendedor_id');
+            $table -> string('pagamento_id');
+
+        });
+
+
     }
 
     /**
