@@ -36,6 +36,17 @@
         }
 
         window.onload = exibirCarrinho;
+
+        function finalizarCompra() {
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    if (carrinho.length === 0) {
+        alert("O carrinho está vazio. Adicione itens antes de finalizar a compra.");
+        return;
+    }
+    window.location.href = "../pages/finalizar-compra.html";
+}
+
+
     </script>
 </head>
 
