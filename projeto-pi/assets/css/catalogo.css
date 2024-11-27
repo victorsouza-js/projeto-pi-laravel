@@ -25,14 +25,14 @@ header img {
 header a {
   color: white;
   text-decoration: none;
-  background-color: #4caf50;
+  background-color: #067abd;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 header a:hover {
-  background-color: #45a049;
+  background-color: #067abd;
 }
 
 header a {
@@ -90,7 +90,7 @@ header a {
 }
 
 .produto button {
-  background-color: #4caf50;
+  background-color: #0a74d8;
   color: white;
   border: none;
   padding: 10px;
@@ -103,7 +103,7 @@ header a {
 }
 
 .produto button:hover {
-  background-color: #155f19;
+  background-color: #03608b;
   transform: scale(1.05);
 }
 
