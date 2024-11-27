@@ -18,15 +18,49 @@ return new class extends Migration
             $table -> string('qtd_estoque');
         });
 
-        Schema::create('venda', function (Blueprint $table) {
+        Schema::create('vendas', function (Blueprint $table) {
             $table->id();
             $table -> string('valor_total');
             $table -> string('data');
             $table -> string('cliente_id');
             $table -> string('vendedor_id');
             $table -> string('pagamento_id');
-
         });
+
+
+        Schema::create('cliente', function (Blueprint $table) {
+            $table->id();
+            $table -> string('nome');
+            $table -> string('telefone');
+            $table -> string('endereco');
+            $table -> string('cpf');
+            $table -> string('email');
+            $table -> string('cep');
+        });
+
+        Schema::create('pagamento', function (Blueprint $table) {
+            $table->id();
+            $table -> string('forma_pagamento');
+        });
+
+
+        Schema::create('categoria', function (Blueprint $table) {
+            $table->id();
+            $table -> string('nome');
+        });
+
+        Schema::create('fornecedores', function (Blueprint $table) {
+            $table->id();
+            $table -> string('cnpj');
+            $table -> string('nome');
+        });
+
+
+
+
+
+
+
 
 
     }
