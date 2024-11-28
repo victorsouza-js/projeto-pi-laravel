@@ -54,6 +54,14 @@ return new class extends Migration
             $table ->string('cnpj');
             $table ->string('nome');
         });
+
+        Schema::create('admin', function (Blueprint $table) {
+            $table->id();
+            $table ->integer('login');
+            $table ->string('nome');
+        });
+
+
     }
 
     /**
