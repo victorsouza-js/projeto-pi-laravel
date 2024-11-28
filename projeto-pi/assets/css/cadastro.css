@@ -37,6 +37,12 @@ body {
   border-radius: 10px;
   font-size: 15px;
   color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-cad form input:hover {
+  background-color: #0f2027;
+  transform: scale(1.05);
 }
 
 .nav-cad form ::placeholder {
@@ -50,8 +56,12 @@ body {
  outline: none;
  color: white;
  background-color: #0f2027;
+ font-size: 15px;
+ transition: background-color 0.3s, transform 0.2s;
 }
 
 .nav-cad button:hover{
   cursor: pointer;
+  background-color: #0f2027;
+  transform: scale(1.05);
 }
