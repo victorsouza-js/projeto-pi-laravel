@@ -25,6 +25,18 @@ class ProdutoSeeder extends Seeder
                 'preco' => '17.90',
                 'qtd_estoque' => '80',
             ],
+            [
+                'nome' => 'Creatina Max 300mg',
+                'preco' => '83.00',
+                'qtd_estoque' => '70',
+            ],
+            [
+                'nome' => 'Creatina Growth 300g',
+                'preco' => '72.00',
+                'qtd_estoque' => '150',
+            ],
+           
+            
         ]);
     }
 }
