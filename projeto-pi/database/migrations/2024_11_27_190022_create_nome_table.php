@@ -31,7 +31,7 @@ return new class extends Migration
         Schema::create('cliente', function (Blueprint $table) {
             $table->id();
             $table ->string('nome');
-            $table ->integer('telefone');
+            $table ->string('telefone');
             $table ->string('endereco');
             $table ->string('cpf');
             $table ->string('email');
