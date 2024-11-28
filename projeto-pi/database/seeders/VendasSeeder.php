@@ -15,7 +15,7 @@ class VendasSeeder extends Seeder
     {
         DB::table('vendas')->insert([
             [
-                'valor_total' => 150.50,
+            'valor_total' => 150.50,
             'data' => now(),
             'cliente_id' => 1,
             'vendedor_id' => 2,
