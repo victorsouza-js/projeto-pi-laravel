@@ -60,8 +60,6 @@ return new class extends Migration
             $table ->integer('login');
             $table ->string('nome');
         });
-
-
     }
 
     /**
