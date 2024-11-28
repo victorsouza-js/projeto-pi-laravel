@@ -33,11 +33,14 @@ body{
     outline: none;
     width: 250px;
     transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .nav-login form input:hover{
     background-color: black;
     cursor: pointer;
+    transform: scale(1.05);
+
 }
 
 .nav-login form button{
