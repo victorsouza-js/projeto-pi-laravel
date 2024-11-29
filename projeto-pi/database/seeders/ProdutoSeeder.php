@@ -14,37 +14,18 @@ class ProdutoSeeder extends Seeder
                 'nome' => 'Creatina Dark Lab 300g',
                 'preco' => '73.00',
                 'qtd_estoque' => '670',
+                'categoria' => 'Monohidratada',
+                'status' => true,
+                'codigo_sku' => 'PROD123456',
+                'preco_promocional' => '60.00',
+                'peso' => '0.300',
+                'dimensoes' => '15x7x0.8 cm',
+                'fornecedor' => 'Tech Supply Ltda.',
+                'tags' => 'suplementos, creatinas, proteinas, monohidratadas',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
-            [
-                'nome' => 'Whey protein 1kg',
-                'preco' => '103.90',
-                'qtd_estoque' => '230',
-            ],
-            [
-                'nome' => 'Vitamina C 500mg',
-                'preco' => '17.90',
-                'qtd_estoque' => '120',
-            ],
-            [
-                'nome' => 'Creatina Max 300mg',
-                'preco' => '83.00',
-                'qtd_estoque' => '340',
-            ],
-            [
-                'nome' => 'Creatina Growth 300g',
-                'preco' => '72.00',
-                'qtd_estoque' => '150',
-            ],
-            [
-                'nome' => 'Creatina Integral Médica 300g',
-                'preco' => '71.00',
-                'qtd_estoque' => '170',
-            ],
-            [
-                'nome' => 'Pré Treino Insany Clow',
-                'preco' => '124.00',
-                'qtd_estoque' => '245',
-            ],
+           
             
         ]);
     }

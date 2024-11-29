@@ -16,6 +16,15 @@ return new class extends Migration
             $table ->string('nome');
             $table ->string('preco');
             $table ->string('qtd_estoque');
+            $table->string('categoria'); 
+            $table->boolean('status')->default(true); 
+            $table->string('codigo_sku')->unique();
+            $table->decimal('preco_promocional', 10, 4)->nullable(); 
+            $table->decimal('peso', 8, 4)->nullable();
+            $table->string('dimensoes')->nullable();
+            $table->string('fornecedor')->nullable(); 
+            $table->string('tags')->nullable(); 
+            $table->timestamps();
         });
 
         Schema::create('vendas', function (Blueprint $table) {
